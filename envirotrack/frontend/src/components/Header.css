@@ -1,0 +1,85 @@
+/* Header.css */
+.app-header {
+  display: flex;
+  align-items: center;
+  background-color: #3498db;
+  padding: 15px; /* Увеличенный внутренний отступ */
+}
+
+.app-logo {
+  width: 100px; /* Увеличенный размер логотипа */
+  height: auto;
+  fill: white;
+}
+
+.app-title {
+  margin-left: 15px; /* Увеличенный отступ слева */
+  color: white;
+  font-size: 18px; /* Увеличенный размер шрифта заголовка */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.user-greeting {
+  color: white;
+  margin-right: 15px;
+  font-size: 16px; /* Увеличенный размер шрифта */
+
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px; /* Увеличенный отступ между ссылками */
+  padding: 8px 12px; /* Увеличенный внутренний отступ */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 14px; /* Увеличенный размер шрифта ссылок */
+}
+
+.nav-link:hover {
+  background-color: #2c3e50;
+  transform: scale(1.05);
+}
+
+.logout-link {
+  color: white;
+  cursor: pointer;
+  margin-right: 20px; /* Увеличенный отступ между ссылками */
+  transition: color 0.3s ease;
+  font-size: 14px; /* Увеличенный размер шрифта */
+}
+
+.logout-link:hover {
+  color: #e74c3c;
+}
+
+.user-greeting {
+  color: white;
+  margin-left: auto;
+}
+
+.app-header h1 {
+  font-size: 20px; /* Увеличенный размер шрифта заголовка */
+  margin: 0;
+}
+
+.login-button {
+  background-color: #4596d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px; /* Увеличенный размер шрифта */
+}

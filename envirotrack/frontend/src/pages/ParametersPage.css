@@ -1,0 +1,247 @@
+/* ParameterPage.css */
+.parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 100%; /* Добавлено максимальная ширина */
+}
+
+.parameter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px; /* Увеличенный отступ снизу */
+}
+
+.parameter-header h3 {
+  margin: 0;
+  font-size: 24px; /* Увеличенный размер шрифта */
+}
+
+.parameter-fields {
+  display: flex;
+  justify-content: space-between; /* Размещаем блоки слева, по середине и справа */
+  align-items: flex-start; /* Выравниваем блоки по верхнему краю */
+  gap: 30px; 
+  width: 100%;
+}
+
+.parameter-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  max-width: 100%; 
+}
+
+.parameter-field label {
+  margin-bottom: 10px; /* Увеличенный отступ снизу */
+  font-size: 18px; /* Увеличенный размер шрифта */
+}
+
+/* Увеличенные размеры формы */
+.parameter-field input {
+  padding: 12px; /* Увеличенный внутренний отступ */
+  font-size: 18px; /* Увеличенный размер шрифта */
+  border: 1px solid #ccc; /* Граничная линия снизу */
+  border-radius: 4px; /* Увеличенный радиус закругления */
+}
+.custom-select {
+  padding: 8px !important; /* Уменьшенный внутренний отступ */
+  font-size: 16px !important; /* Уменьшенный размер шрифта */
+  border: 1px solid #ccc !important; /* Граничная линия снизу */
+  border-radius: 2px !important; /* Уменьшенный радиус закругления */
+  width: 100% !important; /* Растянуть поле на всю доступную ширину */
+}
+.parameter-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parameter-popup {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 100%; 
+}
+
+.parameter-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.parameter-popup-header h3 {
+  margin: 0;
+}
+
+.parameter-popup-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.parameter-popup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%; 
+}
+
+.parameter-popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.parameter-popup-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Увеличенный внутренний отступ */
+  border-radius: 6px; /* Увеличенный радиус закругления */
+  cursor: pointer;
+  font-size: 18px; /* Увеличенный размер шрифта */
+}
+
+.parameter-popup-buttons button:first-child {
+  margin-right: 20px; /* Увеличенный отступ между кнопками */
+}
+/* Стили для поля "Создано пользователем" */
+.created-by-field {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.created-by-label {
+  font-size: 18px; /* Увеличенный размер шрифта для метки */
+}
+
+.created-by-name {
+  font-size: 18px; /* Увеличенный размер шрифта для имени пользователя */
+  margin-top: 16px;
+}
+
+
+.parameter-button-create,
+.parameter-button-save,
+.parameter-button-delete,
+.parameter-button-back {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px; /* Отступ между кнопками */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.parameter-button-save,
+.parameter-button-delete {
+  background-color: #dc3545; /* Красный цвет для кнопок "Сохранить" и "Удалить" */
+}
+
+.parameter-button-save:hover,
+.parameter-button-delete:hover {
+  background-color: #c82333; /* Измененный цвет при наведении для "Сохранить" и "Удалить" */
+}
+
+.parameter-button-save:hover,
+.parameter-button-delete:hover,
+.parameter-button-back:hover {
+  background-color: #0056b3; /* Измененный цвет при наведении */
+}
+
+.modified-by-field {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.modified-by-label {
+  font-size: 18px;
+}
+
+.modified-by-name {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.parameter-button-back:hover {
+  background-color: #0056b3; /* Измененный цвет при наведении для "Назад" */
+}
+
+.parameter-button-back {
+  background-color: #6c757d; /* Серый цвет для кнопки "Назад" */
+}
+
+.parameter-button-back:hover {
+  background-color: #545b62; /* Измененный цвет при наведении для "Назад" */
+  transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.parameter-button-create:hover {
+  background-color: #0056b3; /* Измененный цвет при наведении */
+  transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Увеличить размер шрифта для createdBy и modifiedBy */
+.created-by, .modified-by {
+  font-size: 18px; 
+}
+
+.parameter-fields-1 {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; /* Выравнивание по вертикали */
+  gap: 8px; 
+  margin-top: 20px; /* Отступ сверху */
+}
+
+
+.parameter-field-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 0; 
+  font-size: 18px; 
+}
+
+
+.created-by-label, .modified-by-label {
+  font-size: 18px; 
+}
+
+
+.created-by-name, .modified-by-name {
+  font-size: 18px; 
+  margin-top: 8px;
+}
+
+.left-column {
+  flex: 1; 
+}
+
+.right-column {
+  flex: 1; 
+}
+
+.parameter-set {
+  flex: 1; 
+}
+

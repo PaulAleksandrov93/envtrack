@@ -1,0 +1,16 @@
+.page-container {
+    background-color: #f0f0f0; /* Еще светлее серый фон */
+    padding: 20px; /* Внутренний отступ для контента */
+}
+
+.parameters-list-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0; /* Квадратные рамки */
+    padding: 5px; /* Меньший внутренний отступ */
+    margin-bottom: 2px; /* Уменьшенное расстояние между записями */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}

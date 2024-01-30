@@ -1,0 +1,54 @@
+/* FilterParameters.css */
+.filter-parameters {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.filter-parameters:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+  transform: translateY(-2px);
+}
+
+.filter-parameters select,
+.filter-parameters input[type="date"] {
+  margin-right: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 4px;
+}
+
+.filter-parameters select,
+.filter-parameters input[type="date"] {
+  flex: 1;
+}
+
+.filter-parameters select:hover,
+.filter-parameters input[type="date"]:hover {
+  background-color: #ddd;
+  transform: translateY(-1px);
+}
+
+.filter-parameters button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 15px; /* Увеличенный отступ */
+  font-size: 14px; /* Увеличенный размер шрифта */
+  margin-left: 10px; /* Отступ между кнопками */
+}
+
+.filter-parameters button:hover {
+  background-color: #0056b3;
+}
